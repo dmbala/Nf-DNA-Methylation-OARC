@@ -1,6 +1,6 @@
 
 # DNA methylation analysis pipeline using nextflow. 
-<img src="https://github.com/dmbala/Nf-DNA-Methylation-OARC/blob/master/Fig/dna-methyl-dag.png" width="450px" height="350px" />
+<img src="https://github.com/dmbala/Nf-DNA-Methylation-OARC/blob/master/dna-methyl-dag.png" width="450px" height="350px" />
 
 ## Files in the repo
 
