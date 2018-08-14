@@ -12,17 +12,21 @@
 
 
 ## Major steps 
- * STEP 1 Quality control check with FastQC
- * STEP 2 Remove adaptors with trimgalore
- * STEP 3 Align with HISAT2
- * STEP 4 Generate BED from gtf file
- * STEP 5 Perform RSeQC analysis after alighment
- * STEP 6 Mark duplicates
- * STEP 7 Feature counts
- * STEP 8 Merge featurecounts
- * STEP 9 edgeR MDS and heatmap
- * STEP 10 Deseq2 analysis 
- * STEP 11 MultiQC
+
+ * STEP 1 - Quality control with FastQC
+ * STEP 2A - Adaptor trimming and filtering (Trimgalore) 
+ * STEP 2B - Adaptor trimming and filtering (bbduk) 
+ * STEP 2C - Adaptor trimming and filtering (fastp) 
+ * STEP 3 - Quality control with FastQC after Trim
+ * STEP 4A - Build Bismark index if not provided
+ * STEP 4 - align with Bismark
+ * STEP 5 - Bismark deduplicate
+ * STEP 6 - Bismark methylation extraction
+ * STEP 7 - Bismark Sample Report
+ * STEP 8 - Bismark Summary Report
+ * STEP 9 - dmrcov
+ * STEP 10 - dmrcsv
+ * STEP 11 - MultiQC
 
 ## Storage
 Produces large temporary fastq files that contain methylation info (e.g C_to_T.fastq.gz or G_to_A.fastq.gz)
